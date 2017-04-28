@@ -1,23 +1,23 @@
 class XX
-   @name = ""
+  @name = ""
 
-   def initialize
-	puts "hello"
-        @name = "yuleishou"
-   end
-  
+  def initialize
+    puts "hello"
+    @name = "yuleishou"
+  end
 
-   def getname
-      @name
-   end
 
-   def setname(name)
-     puts "before setname, @name.object_id=" + @name.object_id.to_s
-     puts "before setname, self.object_id=" + self.object_id.to_s
-     @name = name
-     puts "after setname, @name.object_id=" + @name.object_id.to_s
-     puts "after setname, self.object_id=" + self.object_id.to_s
-   end
+  def getname
+    @name
+  end
+
+  def setname(name)
+    puts "before setname, @name.object_id=" + @name.object_id.to_s
+    puts "before setname, self.object_id=" + self.object_id.to_s
+    @name = name
+    puts "after setname, @name.object_id=" + @name.object_id.to_s
+    puts "after setname, self.object_id=" + self.object_id.to_s
+  end
 end
 
 x = XX.new
@@ -30,9 +30,9 @@ puts x.getname
 
 
 def change(x)
-   puts "call change"
-   x.setname "change"
-   x
+  puts "call change"
+  x.setname "change"
+  x
 end
 
 
